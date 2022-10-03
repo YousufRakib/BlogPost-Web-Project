@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Inferme" Class="DataClasses2DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=localhost;Initial Catalog=Inferme;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="InfermeConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Category" Member="Categories">
+    <Type Name="Category">
+      <Column Name="CategroyId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CategoryName" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="createdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="updatedate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="createby" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="updateby" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CategoryImage" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Blogg" Member="Bloggs">
+    <Type Name="Blogg">
+      <Column Name="BloggId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BloggTitle" Type="System.String" DbType="VarChar(350)" CanBeNull="true" />
+      <Column Name="BloggImage" Type="System.String" DbType="VarChar(350)" CanBeNull="true" />
+      <Column Name="ShortDescription" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="category" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="createdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="createby" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="createUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubCatagoryId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UpdateDatebyAdmin" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateAdminId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
